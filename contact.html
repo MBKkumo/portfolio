@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Mustapha Bello — full stack web developer available for projects and collaborations.">
+  <title>Contact — Mustapha Bello</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="logo" href="index.html">Mustapha <span>Bello</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle-bars"></span>
+      </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="is-active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact</h1>
+        <p>Have a project, role, or question? Send a message — I typically reply within one to two business days.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container contact-layout">
+        <div class="contact-info reveal">
+          <h2>Ways to reach me</h2>
+          <p>Prefer email or LinkedIn? Use whichever is easiest — or fill out the form and I’ll get back to you.</p>
+          <div class="contact-channels">
+            <div class="contact-channel">
+              <span>Email</span>
+              <a href="mailto:mustapha.bello@email.com">mustapha.bello@email.com</a>
+            </div>
+            <div class="contact-channel">
+              <span>LinkedIn</span>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/mustaphabello</a>
+            </div>
+            <div class="contact-channel">
+              <span>GitHub</span>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/mustaphabello</a>
+            </div>
+            <div class="contact-channel">
+              <span>Location</span>
+              <a href="#">Nigeria · Remote-friendly</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-1" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-field" data-field="name">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your name">
+              <p class="error" role="alert">Please enter your name.</p>
+            </div>
+            <div class="form-field" data-field="email">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com">
+              <p class="error" role="alert">Please enter a valid email.</p>
+            </div>
+          </div>
+          <div class="form-field" data-field="subject">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="What’s this about?">
+            <p class="error" role="alert">Please add a subject.</p>
+          </div>
+          <div class="form-field" data-field="message">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Tell me about your project or opportunity…"></textarea>
+            <p class="error" role="alert">Please write a short message.</p>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Mustapha Bello</p>
+      <div class="footer-social">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:mustapha.bello@email.com">Email</a>
+      </div>
+      <p class="footer-copy">&copy; <span data-year></span> Mustapha Bello. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
